@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="" utf-8 />
+    <meta name=""viewport" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <p>Pease fill out the form with the required information</p>
+    <fieldset>
+      <label for="first-name"
+        >Enter your First Name: <input name="first-name" placeholder="First Name" id="first-name"
+      /></label>
+      <label for="last-name"
+        >Enter your Last Name: <input id="last-name" name="last-name" placeholder="Last Name"
+      /></label>
+      <label for="email">Enter your email: <input id="email" name="email" placeholder="Email" /></label>
+      <label for="new-password"
+        >Enter new password: <input id="new-password" name="new-password" placeholder="Password" pattern="[a-z0-5]{8,}"
+      /></label>
+    </fieldset>
+    <fieldset>
+      <legend>Account details (required)</legend>
+      <label for="personal-account"
+        ><input
+          type="radio"
+          name="account-type"
+          checked
+          id="personal-account"
+        />
+        Personal</label
+      >
+      <label for="business-account"
+        ><input type="radio" name="account-type" id="business-account" />
+        Business</label
+      >
+    </fieldset>
+    <fieldset>
+      <label>Upload a profile a picture: <input type="file" name="profile-picture" id="profile-picture"/></label>
+      <label>Input your age (years): <input type="number" min="13" max="120" id="age" name="age"/></label>
+      <label>How did you hear about us? 
+        <select id="referrer" name="referrer">
+          <option value="">(select one)</option>
+          <option value="LinkedIn">LinkedIn</option>
+          <option value="YouTube">YouTube</option>
+          <option value=""other">Other</option>
+        </select>
+      </label>
+      <label for=""bio">
+        Provide a bio: 
+        <textarea rows="3" cols="30" name="bio" id="bio" placeholder="Enter your bio"></textarea>
+      </label>
+    </fieldset>
+    <section id="tnc">
+      <label for="terms-and-conditions"
+        ><input type="checkbox" required name="terms=and-conditions" id="terms-and-conditions" /> I agree to
+        the <a href="https://www.google.com">terms and conditions</a></label
+      >
+    </section>
+    <section id="submit">
+      <input type="submit" value="Submit" />
+    </section>
+  </body>
+</html>
